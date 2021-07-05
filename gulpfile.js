@@ -10,8 +10,7 @@ gulp.task('server', function() {
     browserSync({
         server: {
             baseDir: "src"
-        },
-        port: 8080
+        }
     });
 
     gulp.watch("src/*.html").on('change', browserSync.reload);
